@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plant_disease_detection/view/first_screen.dart';
+import 'package:plant_disease_detection/view/second_screen.dart';
+import 'package:plant_disease_detection/view/third_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +35,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const FirstScreen(),
+      //home: const FirstScreen(),
+      // home: const SecondScreen(),
+      home: const ThirdScreen(),
     );
   }
 }
