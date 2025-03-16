@@ -10,10 +10,19 @@ class ThirdScreen extends StatefulWidget {
 class _ThirdScreenState extends State<ThirdScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(children: [
-        
-      ],),
+    return const Scaffold(
+      body: Column(
+        children: [
+           Text(
+            'Weather Update',
+            style: TextStyle(fontSize: 26),
+          ),
+           Text(
+            '21C - 31C',
+            style: TextStyle(fontSize: 20),
+          ),
+        ],
+      ),
     );
   }
 }
