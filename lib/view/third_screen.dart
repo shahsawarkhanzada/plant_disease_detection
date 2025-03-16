@@ -21,11 +21,19 @@ class _ThirdScreenState extends State<ThirdScreen> {
             '21C - 31C',
             style: TextStyle(fontSize: 20),
           ),
+          const SizedBox(
+            height: 18,
+          ),
           const Image(image: AssetImage('assets/images/peach.png')),
           const SizedBox(
             height: 12,
           ),
-          ElevatedButton(onPressed: () {}, child: const Text('Diagnosis'))
+          ElevatedButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(const Color(0xff6A4DFF))),
+              child: const Text('Diagnosis'))
         ],
       ),
     );
