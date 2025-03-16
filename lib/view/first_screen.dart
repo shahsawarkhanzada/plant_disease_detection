@@ -23,12 +23,12 @@ class _FirstScreenState extends State<FirstScreen> {
               width: 200,
             ),
             const Text(
-              'Welcome to Realtime\nPeach Plant Disease\nand Diagnosis System',
+              'Welcome to\nRealtime Peach Plant Disease\nand Diagnosis System',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(
-              height: 25,
+              height: 60,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -40,6 +40,9 @@ class _FirstScreenState extends State<FirstScreen> {
                           MaterialStateProperty.all(const Color(0xff6A4DFF))),
                   child: const Text('Login',
                       style: TextStyle(color: Colors.white)),
+                ),
+                const SizedBox(
+                  width: 15,
                 ),
                 ElevatedButton(
                     onPressed: () {},
@@ -53,20 +56,20 @@ class _FirstScreenState extends State<FirstScreen> {
               ],
             ),
             const SizedBox(
-              height: 25,
+              height: 8,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
                   "Doesn't have an account?",
-                  style: TextStyle(fontSize: 14),
+                  style: TextStyle(fontSize: 12),
                 ),
-                TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      'Register Here',
-                      style: TextStyle(fontSize: 14, color: Color(0xff6A4DFF)),
-                    ))
+                InkWell(
+                  onTap: () {},
+                  child: const Text(' Register here',
+                      style: TextStyle(fontSize: 12, color: Color(0xff6A4DFF))),
+                ),
               ],
             )
           ],
