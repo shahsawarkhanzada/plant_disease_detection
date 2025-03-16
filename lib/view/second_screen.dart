@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:plant_disease_detection/view/third_screen.dart';
 
 class SecondScreen extends StatefulWidget {
   const SecondScreen({super.key});
@@ -91,7 +92,12 @@ class _SecondScreenState extends State<SecondScreen> {
               height: 30,
             ),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ThirdScreen()));
+                },
                 style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all(const Color(0xff6A4DFF))),
