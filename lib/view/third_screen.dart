@@ -10,7 +10,6 @@ class ThirdScreen extends StatefulWidget {
 
 class _ThirdScreenState extends State<ThirdScreen> {
   void _onMenuItemSelected(String value) {
-    // Handle menu item selection
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => const SecondScreen()));
   }

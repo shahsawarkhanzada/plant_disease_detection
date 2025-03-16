@@ -26,10 +26,35 @@ class _SecondScreenState extends State<SecondScreen> {
     });
   }
 
+  void _onMenuItemSelected(String value) {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const SecondScreen()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          PopupMenuButton<String>(
+            onSelected: _onMenuItemSelected,
+            itemBuilder: (BuildContext context) => [
+              const PopupMenuItem(
+                value: "Item 1",
+                child: Text("Your Crop"),
+              ),
+              const PopupMenuItem(
+                value: "Item 2",
+                child: Text("Detect/Diagnose"),
+              ),
+              const PopupMenuItem(
+                value: "Item 3",
+                child: Text("Analysis"),
+              ),
+            ],
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
