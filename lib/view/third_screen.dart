@@ -10,17 +10,22 @@ class ThirdScreen extends StatefulWidget {
 class _ThirdScreenState extends State<ThirdScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         children: [
-           Text(
+          const Text(
             'Weather Update',
             style: TextStyle(fontSize: 26),
           ),
-           Text(
+          const Text(
             '21C - 31C',
             style: TextStyle(fontSize: 20),
           ),
+          const Image(image: AssetImage('assets/images/peach.png')),
+          const SizedBox(
+            height: 12,
+          ),
+          ElevatedButton(onPressed: () {}, child: const Text('Diagnosis'))
         ],
       ),
     );
